@@ -1,19 +1,16 @@
-<<<<<<< HEAD
+
+
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>audio</title>
-=======
->>>>>>> d8453b4790b36f524c8c3acb737c931171b6efec
-<input type="file" accept="audio/*" capture id="recorder">
-<audio id="player" controls></audio>
-<script>
-  const recorder = document.getElementById('recorder');
-  const player = document.getElementById('player');
+<html>
+<body>
 
-  recorder.addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    const url = URL.createObjectURL(file);
-    // Do something with the audio file.
-    player.src = url;
-  });
-</script>
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form >
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+
+</body>
+</html>
